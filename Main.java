@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         doYear(2023);
         doPhone(2020);
+        doWay(95);
     }
 
 
@@ -20,6 +21,20 @@ public class Main {
             System.out.println("Установите обычную версию Android по ссылке");
         } else {
             System.out.println("Установите облегченную версию Android по ссылке");
+        }
+    }
+
+    public static void doWay(int deliveryDistance) {
+        System.out.println("\nЗадание 3.");
+
+        if (deliveryDistance <= 20) {
+            System.out.println("Доставка занимает сутки");
+        }
+        if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            System.out.println("Доставка занимает двое суток");
+        }
+        if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            System.out.println("Доставка занимает трое суток");
         }
     }
 }
