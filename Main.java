@@ -1,19 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-        doYear(2023);
-        doPhone(2020);
-        doWay(95);
+        printYear(2023);
+        printPhoneInfo(2020);
+        calculateDeliveryDays(95);
     }
 
 
-    public static void doYear(int year) {
+    public static void printYear(int year) {
         System.out.println("\nЗадание 1.");
         if (!(year % 4 == 0) || ((year % 100 == 0) && !(year % 400 == 0)))
             System.out.println(year + " не високосный год");
         else System.out.println(year + " високосный год");
     }
 
-    public static void doPhone(int currentyear) {
+    public static void printPhoneInfo(int currentyear) {
         System.out.println("\nЗадание 2.");
         int clientOS = 1;
         long clientDeviceYear = 2015L;
@@ -24,7 +24,7 @@ public class Main {
         }
     }
 
-    public static void doWay(int deliveryDistance) {
+    public static void calculateDeliveryDays(int deliveryDistance) {
         System.out.println("\nЗадание 3.");
 
         if (deliveryDistance <= 20) {
