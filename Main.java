@@ -32,7 +32,7 @@ public class Main {
             System.out.printf("Установите %s версию приложения для %s", versionMessage, osMessage);
         }
 
-    private static void calculateDeliveryDays(int deliveryDistance) {
+    private static int calculateDeliveryDays(int deliveryDistance) {
         System.out.println("\nЗадание 3.");
         int start = 20;
         int step = 40;
@@ -42,7 +42,7 @@ public class Main {
         } else {
             result = (Math.abs((deliveryDistance - start) / step)+2);
         }
-        System.out.println("Потребуется дней для доставки " + result);
+        return result;
     }
 
                     }
